@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>W3.CSS Template</title>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="w3styles.css">
+
+<style>
+body {font-family: "Arial", sans-serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Tall Films";
+    letter-spacing: 5px;
+}
+</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+<script>
+    // Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+</script>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+          <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="#home" class="w3-bar-item w3-button">HOME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hide-small" title="about us"><i class="fa fa-user"></i> ABOUT</a>
+          <a href="#walks" class="w3-bar-item w3-button w3-hide-small" title="walks you can do"><i class="fa fa-th"></i> WALKS</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hide-small" title="contact us"><i class="fa fa-envelope"></i> CONTACT</a>
+          <a href="#photos" class="w3-bar-item w3-button w3-hide-small" title="slideshow"><i class="fa fa-camera"></i> PHOTOGRAPHS</a>
+          <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+            <i class="fa fa-search"></i>
+          </a>
+        </div>
+      
+        <!-- Navbar on small screens -->
+        <div id="nav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+          <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+          <a href="#walks" class="w3-bar-item w3-button" onclick="toggleFunction()">WALKS</a>
+          <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+          <a href="#photos" class="w3-bar-item w3-button" onclick="toggleFunction()">PHOTOGRAPHS</a>
+          <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+      </div>
+
+
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="norwest_rain.jpg" alt="norwest in the rain" width="100%" >
+  <div class="w3-container w3-cell w3-display-left  w3-opacity">
+    <h1 class="white"  style="font-size:10vw">Walk with me</h1> 
+    <h4 class="white"  style="font-size:4vw">Personalised walking tours in the Coleridge area</h4>
+    <img src="logosmall.jpg" alt="logo"></div>
+
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row" id="about">
+      <div class="w3-col s6 w3-left" style="padding-right: 10px" style="padding-left: 10px"><h2  style="font-size:6vw">About "Walk with me"</h2></div>
+      <div class="w3-col s6 w3-left" style="padding-right: 10px"> 
+   </div>     
+   <div class="w3-row">
+        <div class="w3-col s9 w3-left" style="padding-right: 10px">
+            <p>Lake Coleridge is a region in Canterbury, bounded by mountain ranges and includes three major rivers: the Harper, Rakaia and the Wilberforce.
+                A spectacular region, there are many walks that have been created which are well marked and maintained. In addition to these, there are a number of walks that are not on the typical tourist's radar,
+                and this is where Robert's local knowledge and expertise are invaluable.
+            
+            </p>
+            <p>Robert has lived in Lake Coleridge Village since 2013. He is an avid walker, tramper, fisherman
+        and an experienced guide. He combines his passion for the outdoors with an extensive knowledge of the local area—including the abundant bird life and native flora and fauna 
+        that can be seen on the different landscapes. <span style="text-shadow:0px 1px 0 #444">Walk with me </span>is his business. He will take you on a fully catered, personalised walking tour of the length and difficulty level that you choose. From one day (6-hour) gentle walks along the river 
+        to four or five-day tramps in the nearby ranges, Robert will create a walking experience that best suits you.
+    </p> 
+    </div>
+        </div>
+
+        <div class="w3-row">
+      <div class="w3-col s8 w3-center"><img src="rakaia.jpg" alt="rakaia landscape" style="Width:100%"></div>
+  </div>
+  
+  <hr>
+  </div>
+  
+  <!-- Walks Section -->
+  <div class="w3-col s6 w3-left" style="padding-right: 10px" id="walks">
+   
+      <h2 style="font-size:6vw">Established Walks</h2><br>
+      <div class="w3-row">
+            <div class="w3-col s8 w3-left-align w3-padding-16" style="padding-right: 10px">
+                <img src="reflect.jpg" alt="reflection" style="width:90%" class="w3-border w3-padding">
+                </div>
+            <div class="w3-col s4 w3-left-align" style="padding-right: 10px">
+                    <h5>Lake Ida</h5>
+      <p class="w3-text-grey">Difficulty level: Easy<br>
+      2 hours<br>
+      Ice skating in winter!<br>
+      </p> 
+       </div>        
+       </div>
+               
+         <div class="w3-row">
+                <div class="w3-col s8 w3-left-align w3-padding-16" style="padding-right: 10px">     
+               <img src="acheron.jpg" alt="acheron" style="width:90%" class="w3-border w3-padding"> 
+               </div>
+               <div class="w3-col s4 w3-left-align" style="padding-right: 10px">
+                    <h5>Peak Hill</h5>
+                    <p class="w3-text-grey">Difficulty level: Hard<br>
+                    3 to 4 hours<br>
+                    Spectacular views<br>
+                    </p>
+                </div>
+        </div>    
+
+        <div class="w3-row">
+                <div class="w3-col s8 w3-left-align w3-padding-16" style="padding-right: 10px">  
+                    <img src="christine.jpg" alt="lake christine" style="width:90%" class="w3-border w3-padding"> 
+                    </div>
+                    <div class="w3-col s4 w3-left-align" style="padding-right: 10px">
+                            <h5>Hamilton Hut</h5>
+                            <p class="w3-text-grey">Difficulty level: Hard<br>
+                            6 hours one way<br>
+                            Overnight in the hut<br>
+                            </p>
+                           </div>
+                        </div> 
+        <div class="w3-row">
+                <div class="w3-col s8 w3-left-align w3-padding-16" style="padding-right: 10px"> 
+                    <img src="dryacheron.jpg" alt="dry acheron" style="width:90%" class="w3-border w3-padding">
+                </div>
+                <div class="w3-col s4 w3-left-align" style="padding-right: 10px">
+                        <h5>Dry Acheron</h5>
+                        <p class="w3-text-grey">Difficulty level: Moderate/Hard<br>
+                        2 to 10 hours<br>
+                        </p>
+                    </div>
+                    </div>            
+    
+        <div class="w3-row">
+                <div class="w3-col s8 w3-left-align w3-padding-16" style="padding-right: 10px"> 
+                        <img src="peakhill.jpg" alt="peakhill view" style="width:90%" class="w3-border w3-padding"> 
+                        </div>
+                        <div class="w3-col s4 w3-left-align" style="padding-right: 10px">
+                                <h5>Lake Lillian</h5>
+                                <p class="w3-text-grey">Difficulty level: Moderate<br>
+                                6 hours<br>
+                                Diverse landscapes. Lake views.<br>
+                                </p>
+                        </div>
+                </div>
+     
+    
+      
+      
+      
+    </div>
+    <div class="w3-row">
+      <img src="mapofwalks.jpg" alt="map of walks in the area" class="w3-border w3-padding" style="width:80%">
+    
+  
+    
+
+
+  <hr>
+  <!-- Personalised walks section -->
+  <div class="w3-row" id="personalise">
+        <div class="w3-col s6 w3-left" style="padding-right: 10px"><h2 style="font-size:6vw">Personalised walks</h2></div>    
+     <div class="w3-row">
+          <div class="w3-col s9 w3-left" style="padding-right: 10px">
+              <p>Robert's local knowledge and expertise are invaluable when it comes to walking in this region.<br>
+                He is able to tailor your walk to best suit your needs: fitness levels, terrain and length of time you have available.<br>
+                Because Robert knows the region, he is able to understand the vagaries of the local weather, and will ensure that your walking and tramping experience is the best possible!
+                From dropping you off at the start of your walk and picking you up at the end to guiding you for five days through the mountains, Robert will ensure that your needs are met.
+              </p>
+              
+              <p>An expert photographer, Robert can also help take you to the most majestic places to get your spectacular views. 
+                  His knowledge of local flora and fauna means that he can identify and talk about the local trees and plants, from finding the rare orchids to expounding on the traditional medicinal properties of native plants. <br>
+                  Robert will create a walking experience that best suits you.
+      </p> 
+      <p> Contact Robert through the form below to ask any questions and find out any information you may need.
+          <a href="#contact" class="w3-bar-item w3-button " title="contact us"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+      </div>
+      <div class="w3-row">
+            <div class="w3-col l10 w3-center"><img src="peakhill-long.jpg" alt="view from peak hill" style="Width:100%"></div>
+    </div>
+<hr>
+  <!-- Slideshow section -->
+  <div class="w3-row w3-padding-64" >
+    <div class="w3-col l6">
+      <h2  style="font-size:6vw">Photography</h2>
+      </div>
+  <div class="w3-content w3-display-container" style="width:100%" id="photos">
+        <img class="mySlides" src="bellbird.jpg" alt="bellbird" style="width:100%">
+        <img class="mySlides" src="clayrange.jpg" alt="the clayrange" style="width:100%">
+        <img class="mySlides" src="dottrel.jpg" alt="dottrel" style="width:100%">
+        <img class="mySlides" src="reflect.jpg" alt="reflection lake georgina" style="width:100%">
+        <img class="mySlides" src="misty.jpg" alt="mist over mt hutt" style="width:100%">
+        <img class="mySlides" src="fantail.jpg" alt="fantail" style="width:100%">
+        
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                
+              </div>
+            </div>
+        <div class="w3-center">
+                <button class="w3-button" onclick="plusDivs(-1)">◀ Prev</button>
+                <button class="w3-button" onclick="plusDivs(1)">Next ▶</button>
+                
+              </div>
+            </div>
+    </div>
+    <hr>
+<!--contact section -->
+<div class="w3-row " ></div>
+<div class="w3-col l6 w3-padding-large">
+  <h2 id="contact"  style="font-size:8vw">Contact me</h2>
+  </div>
+    <div class="w3-content w3-container">
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m3 s4 w3-container">
+        <!-- Add Google Maps -->
+        <!--<div id="map" class="w3-round-large w3-greyscale" style="width:100%;height:400px;">
+            <img src="mapofregion.jpg" alt="map of the area with walks" style="width:100%">
+        
+        </div>
+      -->
+      <div  class="w3-round-large " style="width:100%">
+       <img src="map.jpg" alt="map showing walks"style="width:100%">
+      </div>
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Lake Coleridge Village<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +64 3 3566433<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: Robert@walkwithme.com<br>
+        </div>
+        <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+        <form action="/mailto:robert@walkwithme.com" target="_blank">
+            <input type="submit" value="Send Email"/>
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+    
+
+
+
+
+
+  
+</div> 
+<!-- End page content -->
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Created by Temwa Chileshe 2018</p>
+</footer>
+
+<script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-white";
+        }
+        </script>
+<script>function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+        center: new google.maps.LatLng(-43.272260, 171.472163),
+        zoom: 10
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?AIzaSyDu3E2UtBYsFE9YhCOu-7ha_dEksVjbljY&amp;&callback=myMap"></script>
+</body>
+</html>
+
